@@ -8,6 +8,9 @@ const Router = router.Router;
 const Route = router.Route;
 const hashHistory = router.hashHistory;
 
+const IndexRoute = router.IndexRoute;
+const Link = router.Link;
+
 const INBOX = {
   0: {
     id: 0,
@@ -79,6 +82,22 @@ const routes = (
     <Route path="/inbox" component={ Inbox } /> 
   </Router>
 );
+
+const App = function( props ) {
+  return (
+    <div>
+      <h1>
+        Emails App
+      </h1>
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+    </div>
+  );
+};
 
 document.addEventListener( 'DOMContentLoaded', function() {
   ReactDOM.render( routes, document.getElementById( 'app' ) );
